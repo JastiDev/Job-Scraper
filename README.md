@@ -1,2 +1,3 @@
 # WebScraping
-Web Scraping for Job Portals
+Repo description - Contains Codes to Scrap from Different Job Portal data using Scarpy Framework .
+
