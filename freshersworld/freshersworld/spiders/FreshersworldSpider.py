@@ -83,7 +83,7 @@ class FreshersworldSpider(scrapy.Spider):
             experience = job.select_one('span.experience').get_text(strip=True)  # Experience
             salary = job.select_one('span.qualifications').get_text(strip=True)  # Salary
             link = job.select_one('div.job-desc-block a')['href']  # Link to job details
-
+            posted_on = job.select_one('div.text-ago .ago-text').get_text(strip=True) if job.select_one('div.text-ago .ago-text') else 'N/A'
             # Create a job item dictionary
             job_item = {
                 'title': title,
@@ -92,7 +92,8 @@ class FreshersworldSpider(scrapy.Spider):
                 'description': description,
                 'experience': experience,
                 'salary': salary,
-                'link': link
+                'link': link,
+                'posted_on': posted_on 
             }
 
             self.all_data.append(job_item)
@@ -101,7 +102,7 @@ class FreshersworldSpider(scrapy.Spider):
 
     def save_data(self, data):
         # Save data to CSV
-        csv_file = "freshersworld_job_data.csv"
+        csv_file = "wfh_job.csv"
         keys = data[0].keys()
         with open(csv_file, "w", newline="", encoding="utf-8") as output_file:
             dict_writer = csv.DictWriter(output_file, fieldnames=keys)
@@ -110,12 +111,8 @@ class FreshersworldSpider(scrapy.Spider):
 
         self.logger.info(f"Data saved to {csv_file}")
 
-        # Save data to Excel
-        excel_file = "freshersworld_job_data.xlsx"
-        df = pd.DataFrame(data)
-        df.to_excel(excel_file, index=False)  # Save Data
           # Save data to JSON
-        json_file = "job_data.json"
+        json_file = "wfh_job.json"
         with open(json_file, "w", encoding="utf-8") as json_output_file:
             json.dump(data, json_output_file, ensure_ascii=False, indent=4)
 
