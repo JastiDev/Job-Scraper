@@ -16,3 +16,6 @@ class JobSpider(scrapy.Spider):
                 'Location': row.xpath('td[5]/text()').get(),
                 'Apply Link': row.xpath('td[6]/a/@href').get(),
             }
+
+# To run the spider, you can use the following command in your terminal:
+# scrapy crawl freshernow_job -o output.json
