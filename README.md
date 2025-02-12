@@ -75,7 +75,7 @@ This project is intended for educational purposes only. Ensure you comply with w
 ## 📬 Contact
 For any queries or contributions, feel free to reach out:
 - **GitHub:** [SimranShaikh20](https://github.com/SimranShaikh20)
-- **Email:** your-email@example.com (replace with actual email)
+
 
 ## ⭐ Contributing
 Contributions are welcome! Please fork this repository and submit a pull request with your improvements.
