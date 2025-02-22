@@ -69,9 +69,6 @@ scrapy crawl spider_name -o output.json
 ]
 ```
 
-## ⚠️ Disclaimer
-This project is intended for educational purposes only. Ensure you comply with website terms of service before scraping.
-
 ## 📬 Contact
 For any queries or contributions, feel free to reach out:
 - **GitHub:** [SimranShaikh20](https://github.com/SimranShaikh20)
