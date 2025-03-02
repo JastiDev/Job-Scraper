@@ -1,6 +1,6 @@
-# Web Scraping Project
+# Job Scraper Project
 
-![Web Scraping](https://img.shields.io/badge/Web%20Scraping-Python-blue.svg)
+![Job Scraper](https://img.shields.io/badge/Web%20Scraping-Python-blue.svg)
 
 ## 📌 Project Overview
 This repository contains various web scraping scripts designed to extract data from multiple websites. The scripts leverage Python libraries such as `Scrapy`, `BeautifulSoup`, and `Selenium` to scrape and collect structured data efficiently. The collected data can be utilized for analysis, visualization, or further machine learning applications.
