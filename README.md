@@ -29,7 +29,7 @@ This repository contains various web scraping scripts designed to extract data f
 ## 🔧 Installation & Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/SimranShaikh20/WebScraping.git
+   git clone https://github.com/SimranShaikh20/Job-Scraper.git
    cd WebScraping
    ```
 2. **Create a virtual environment (optional but recommended)**
