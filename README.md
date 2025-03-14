@@ -68,7 +68,7 @@ scrapy crawl spider_name -o output.json
 
 ## 📬 Contact
 For any queries or contributions, feel free to reach out:
-- **GitHub:** [SimranShaikh20](https://github.com/SimranShaikh20)
+- **GitHub:** [JastiDev](https://github.com/JastiDev)
 
 
 ## ⭐ Contributing
